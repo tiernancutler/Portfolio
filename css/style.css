@@ -10,7 +10,7 @@ body{
   background-color: #ffffff;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6
   color:#3B3E3E
 }
@@ -24,9 +24,24 @@ h1{
 }
 h2{
   font-size: 1.75em;
-  font-weight: 500;
+  font-weight: 700;
 }
 h3{
   font-size: 1.35em;
   font-weight: 500
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #4f999c;
+  font-weight:500;
+  text-decoration: none;
+}
+a:hover {
+  color: #4f999c;
+  font-weight:500;
+  text-decoration: underline;
 }
