@@ -63,6 +63,10 @@ a:active { /* selected link */
   border-bottom: 2px solid #4f999c; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+.button:visited {
+  color: #ffffff; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
