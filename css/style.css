@@ -1,6 +1,6 @@
 /*
 Colors used:
-Dark Green: 4f999c
+Dark Green: #4f999c
 Light Green: #89D1CA;
 Blue: #587ca6;
 dark grey: #3B3E3E;
@@ -52,4 +52,28 @@ a:focus {
 a:active { /* selected link */
   color: #587ca6;
   text-decoration: underline;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #4f999c;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #4f999c; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button.contact {
+  background-color: transparent;
+  color: #4f999c;
+  text-transform: uppercase;
+  border: 2px solid #4f999c;
+}
+.button.contact:hover {
+  background-color: #4f999c;
+  color: #ffffff;
 }
