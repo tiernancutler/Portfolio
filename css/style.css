@@ -45,3 +45,10 @@ a:hover {
   font-weight:500;
   text-decoration: underline;
 }
+a:visited { /* visited link */
+  color: #587ca6;
+}
+a:active { /* selected link */
+  color: #587ca6;
+  text-decoration: underline;
+}
