@@ -7,12 +7,12 @@ dark grey: #3B3E3E;
 */
 
 body{
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.6
-  color:#3B3E3E
+  line-height: 1.6;
+  color:#3B3E3E;
 }
 
 h1, h2, h3 {
@@ -36,11 +36,13 @@ img {
 }
 
 a {
+  background-color: transparent;
   color: #4f999c;
   font-weight:500;
   text-decoration: none;
 }
 a:visited { /* visited link */
+  background-color: transparent;
   color: #587ca6;
 }
 a:hover,
