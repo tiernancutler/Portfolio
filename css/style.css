@@ -1,7 +1,7 @@
 /*
 Colors used:
 Dark Green: #4f999c
-Light Green: #89D1CA;
+Light Green: #52c4b9;
 Blue: #587ca6;
 dark grey: #3B3E3E;
 light grey: #f5fafa;
@@ -22,16 +22,19 @@ h1, h2, h3 {
 h1 {
   font-size: 2.0em;
   font-weight: 700;
+  color:#4f999c;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: 700;
+  color: #52c4b9;
 }
 
 h3 {
-  font-size: 1.25em;
-  font-weight: 500
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #587ca6;
 }
 
 img {
@@ -42,22 +45,25 @@ header {
   background-color: #FFFFFF;
   padding: 10px 0;
   text-align: center;
-  border-bottom: 3px solid #89D1CA;
+  border-bottom: 3px solid #52c4b9;
   position: fixed;
   width: 100%;
   box-shadow: 6px 6px 10px 0px rgba(50, 50, 50, 0.25);
 }
 
 footer {
-  padding: 15px;
-  background-color: #89D1CA;
-  color: #3B3E3E;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4f999c;
+  color: #FFFFFF;
   text-align: center;
 }
 
-.copyright{
+
+.copyright {
   font-size: 12px;
 }
+
 a {
   color: #4f999c;
 }
@@ -94,6 +100,7 @@ nav ul {
   margin: 0;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block;
 }
@@ -104,8 +111,8 @@ nav ul li {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 500;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 10px 30px;
+  border-radius: 30px;
   border-bottom: 2px solid #4f999c;
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -117,7 +124,6 @@ nav ul li {
   text-decoration: none;
 }
 
-
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
@@ -126,7 +132,7 @@ nav ul li {
 
 .button.social {
   background-color: transparent;
-  border:none
+  border: none
 }
 
 .button.contact {
@@ -147,13 +153,23 @@ nav ul li {
 }
 
 .row {
-  margin:25px 0;/* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px
-  solid #89D1CA;
+  border-bottom: 1px solid #52c4b9;
+}
+
+#work {
+  text-align: center;
+}
+
+
+#about .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #52c4b9;
 }
 
 #hero h1 {
@@ -172,10 +188,14 @@ nav ul li {
   max-width: 200px
 }
 
-.center {
+center {
   text-align: center;
 }
 
-main{
+main {
   padding-top: 125px;
+}
+
+.section.about {
+  text-align: center;
 }
