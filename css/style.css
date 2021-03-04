@@ -112,8 +112,6 @@ nav ul li {
   display: inline-block;
 }
 
-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-
 .button {
   display: inline-block;
   background-color: #4f999c;
@@ -124,7 +122,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   border-radius: 30px;
   border-bottom: 2px solid #4f999c;
   /* width of the border, type, color */
-  transition: 0.5s opacity;
+  transition: 0.2s opacity;
   text-decoration: none;
 }
 
@@ -136,6 +134,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
 
 .button.social {
@@ -148,10 +147,11 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   color: #4f999c;
   border: none;
   text-transform: uppercase;
+  transition: .05s
 }
 
 .button.contact:hover {
-  background-color: #4f999c;
+  background-color: #52c4b9;
   color: #ffffff;
 }
 
@@ -221,6 +221,33 @@ main {
   text-align: center;
 }
 
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(500px,50px);}
+  to {transform: translate(10px,50px);}
+}
+
+.cloud-front {
+  animation: 10s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(0,50px);}
+  to {transform: translate(300px,50px);}
+}
+
+.cloud-back {
+  animation: 12s cloud-move-reverse infinite alternate linear;
+}
 
 /* ==============================
 Medium devices (640px and larger)
