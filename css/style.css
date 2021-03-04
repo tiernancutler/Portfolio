@@ -122,7 +122,8 @@ nav ul li {
   border-radius: 30px;
   border-bottom: 2px solid #4f999c;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
+  transition-property: opacity;
   text-decoration: none;
 }
 
@@ -134,7 +135,6 @@ nav ul li {
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button.social {
@@ -177,6 +177,18 @@ nav ul li {
   padding-bottom: 25px;
   border-bottom: 1px solid #52c4b9;
 
+}
+
+#about h1 {
+  text-align: center
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about .button {
+  text-align: center;
 }
 
 #hero h1 {
@@ -256,10 +268,6 @@ Medium devices (640px and larger)
 
   #work h2 {
     text-align: center;
-  }
-
-  #about h1 {
-    text-align: center
   }
 
   #about h3 {
