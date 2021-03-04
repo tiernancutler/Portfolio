@@ -112,6 +112,8 @@ nav ul li {
   display: inline-block;
 }
 
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
 .button {
   display: inline-block;
   background-color: #4f999c;
@@ -122,8 +124,7 @@ nav ul li {
   border-radius: 30px;
   border-bottom: 2px solid #4f999c;
   /* width of the border, type, color */
-  transition-duration: 0.2s;
-  transition-property: opacity;
+  transition: 0.5s opacity;
   text-decoration: none;
 }
 
