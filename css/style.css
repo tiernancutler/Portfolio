@@ -6,6 +6,10 @@ Blue: #587ca6;
 dark grey: #3B3E3E;
 light grey: #f5fafa;
 */
+* {
+  box-sizing:border-box;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Fira Sans', sans-serif;
@@ -232,14 +236,6 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 20px;
-  }
 
   .row::after {
     content: "";
@@ -247,23 +243,46 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 20px;
+  }
+
+  .col-md-6 {width: 50%;}
+
   #work {
     text-align: left;
   }
 
-  #work h2{
+  #work h2 {
     text-align: center;
+  }
+
+  #about h1 {
+    text-align: center
   }
 
   #about h3 {
     margin-top: 0;
   }
+
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-7 {width: 58.33%;}
+
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+}
 
 /* ==============================
 X-large devices (1440px or larger)
