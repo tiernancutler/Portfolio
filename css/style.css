@@ -7,7 +7,7 @@ dark grey: #3B3E3E;
 light grey: #f5fafa;
 */
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -169,7 +169,7 @@ nav ul li {
   /* 25px top and bottom, 0 left and right */
 }
 
-.social .fab{
+.social .fab {
   font-size: 20px;
   color: #FFF;
   width: 2em;
@@ -201,11 +201,9 @@ nav ul li {
   text-align: center;
 }
 
-
 #about .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #52c4b9;
-
 }
 
 #about .row:last-child {
@@ -260,9 +258,17 @@ main {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -270,8 +276,13 @@ main {
 }
 
 @keyframes cloud-move {
-  from {transform: translate(500px,50px);}
-  to {transform: translate(10px,50px);}
+  from {
+    transform: translate(500px, 50px);
+  }
+
+  to {
+    transform: translate(10px, 50px);
+  }
 }
 
 .cloud-front {
@@ -279,13 +290,29 @@ main {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(0,50px);}
-  to {transform: translate(300px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(300px, 50px);
+  }
 }
 
 .cloud-back {
   animation: 18s cloud-move-reverse infinite alternate linear;
 }
+
+.intro {
+  text-align: center;
+}
+
+.intro span {
+  display: block;
+  font-size: 80%;
+  font-weight: 200;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -303,13 +330,12 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 98px;
+    padding-top: 120px;
   }
 
   body {
     font-size: 18px;
   }
-
 
   .row::after {
     content: "";
@@ -319,29 +345,31 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 20px;
   }
 
-  .col-md-6 {width: 50%;}
+  .col-md-6 {
+    width: 50%;
+  }
 
   .projects {
     text-align: left;
   }
 
-.projects h2 {
+  .projects h2 {
     text-align: center;
   }
 
   #about h3 {
     margin-top: 0;
   }
+
   #about img {
     max-width: 400px;
     border-radius: 100em;
   }
 
   #about .float-none {
-    float:none;
+    float: none;
   }
 
   #about picture {
@@ -354,22 +382,31 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-7 {width: 58.33%;}
 
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-8 {width: 66.66%;}
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
 
   .container {
     max-width: 1200px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
   }
+
   #about img {
     max-width: 100%;
     border-radius: 0;
   }
 
   #about .float-none {
-    float:left;
+    float: left;
   }
 
   #about picture {
@@ -377,20 +414,30 @@ Large devices (1024px or larger)
     text-align: left;
   }
 
-#about .story h2 {
-  margin-top: 0;
+  #about .story h2 {
+    margin-top: 0;
+  }
+
+  #about .row.story {
+    margin: 80px 0;
+    border-bottom: none;
+  }
+
+  main {
+    padding-top: 150px;
+  }
+
+.define {
+  padding-top: 50px;
 }
 
-#about .row.story {
-  margin: 80px 0;
-  border-bottom: none;
-}
-
-main {
-  padding-top: 150px;
+.test .row {
+  display: block;
 }
 
 }
+
+
 
 /* ==============================
 X-large devices (1440px or larger)
