@@ -10,6 +10,10 @@ light grey: #f5fafa;
   box-sizing:border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #FFFFFF;
   font-family: 'Fira Sans', sans-serif;
@@ -165,19 +169,47 @@ nav ul li {
   /* 25px top and bottom, 0 left and right */
 }
 
-#work .row {
+.social .fab{
+  font-size: 20px;
+  color: #FFF;
+  width: 2em;
+  height: 2em;
+  background: #4f999c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10em;
+  margin-top: 1em;
+  border: 2px solid #FFF;
+}
+
+.social .fab:hover {
+  color: #FFF;
+  background: #587ca6;
+}
+
+.projects .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #52c4b9;
 }
 
-#work {
+.projects .row:last-child {
+  border-bottom: none;
+}
+
+.projects {
   text-align: center;
 }
+
 
 #about .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #52c4b9;
 
+}
+
+#about .row:last-child {
+  border-bottom: none;
 }
 
 #about h1 {
@@ -192,11 +224,17 @@ nav ul li {
   text-align: center;
 }
 
-#hero h1 {
+.welcome h1 {
   text-align: center;
 }
 
-#hero {
+.welcome span {
+  display: block;
+  font-size: 80%;
+  font-weight: 200;
+}
+
+.welcome {
   background-color: #FFFFFF;
   padding: 10px 0;
   display: inline-block;
@@ -237,7 +275,7 @@ main {
 }
 
 .cloud-front {
-  animation: 10s cloud-move infinite alternate linear;
+  animation: 15s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
@@ -246,7 +284,7 @@ main {
 }
 
 .cloud-back {
-  animation: 12s cloud-move-reverse infinite alternate linear;
+  animation: 18s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
@@ -272,10 +310,6 @@ Medium devices (640px and larger)
     font-size: 18px;
   }
 
-  #hero span {
-    display: block;
-  }
-
 
   .row::after {
     content: "";
@@ -290,18 +324,30 @@ Medium devices (640px and larger)
 
   .col-md-6 {width: 50%;}
 
-  #work {
+  .projects {
     text-align: left;
   }
 
-  #work h2 {
+.projects h2 {
     text-align: center;
   }
 
   #about h3 {
     margin-top: 0;
   }
+  #about img {
+    max-width: 400px;
+    border-radius: 100em;
+  }
 
+  #about .float-none {
+    float:none;
+  }
+
+  #about picture {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* ==============================
@@ -317,6 +363,32 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right:auto;
   }
+  #about img {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  #about .float-none {
+    float:left;
+  }
+
+  #about picture {
+    display: block;
+    text-align: left;
+  }
+
+#about .story h2 {
+  margin-top: 0;
+}
+
+#about .row.story {
+  margin: 80px 0;
+  border-bottom: none;
+}
+
+main {
+  padding-top: 150px;
+}
 
 }
 
