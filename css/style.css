@@ -345,6 +345,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
+    padding: 15px;
   }
 
   .col-md-6 {
@@ -433,6 +434,11 @@ Large devices (1024px or larger)
 
 .test .row {
   display: block;
+}
+
+/* Ask Carlo how to remove padding from this section of columns */
+.overview .col-md-6 {
+  padding: 0;
 }
 
 }
