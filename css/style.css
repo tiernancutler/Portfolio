@@ -28,13 +28,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.0em;
+  font-size: 1.75em;
   font-weight: 700;
   color: #4f999c;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-weight: 700;
   color: #52c4b9;
   text-align: center;
@@ -42,7 +42,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 500;
   color: #587ca6;
 }
@@ -54,11 +54,41 @@ img {
 header {
   background-color: #FFFFFF;
   padding: 10px 0;
-  text-align: center;
   border-bottom: 3px solid #52c4b9;
   position: fixed;
   width: 100%;
   box-shadow: 6px 6px 10px 0px rgba(50, 50, 50, 0.25);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 3px;
+}
+
+nav a.active {
+  font-weight: 500;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
 }
 
 footer {
@@ -95,27 +125,6 @@ a:focus {
 a:active {
   /* selected link */
   color: #587ca6;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 3px;
-}
-
-nav a.active {
-  font-weight: 500;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
 }
 
 .button {
@@ -244,7 +253,7 @@ nav ul li {
 }
 
 .logo {
-  max-width: 200px
+  max-width: 150px
 }
 
 center {
@@ -252,7 +261,7 @@ center {
 }
 
 main {
-  padding-top: 125px;
+  padding-top: 90px;
 }
 
 .section.about {
@@ -337,9 +346,25 @@ Medium devices (640px and larger)
 .col-12 {width: 100%;}
 ================================= */
 @media only screen and (min-width: 640px) {
+
+  .logo {
+    max-width: 200px
+  }
+
   header {
     text-align: unset;
     padding: 25px 0 13px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
   }
 
   nav {
@@ -347,6 +372,14 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 20px;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
   main {
     padding-top: 120px;
