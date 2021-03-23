@@ -260,6 +260,10 @@ a:active {
   font-weight: 200;
 }
 
+.welcome h3 {
+  color: #4f999c;
+}
+
 .welcome {
   background-color: #FFFFFF;
   padding: 10px 0;
