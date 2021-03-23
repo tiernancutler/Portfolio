@@ -1,7 +1,7 @@
 /*
 Colors used:
-Dark Green: #4f999c
-Light Green: #52c4b9;
+Dark Green: #4f999c changed to #428083 to pass AA test;
+Light Green: #52c4b9 changd to #2d837b to pass AA test
 Blue: #587ca6;
 dark grey: #3B3E3E;
 light grey: #f5fafa;
@@ -36,7 +36,7 @@ h1 {
 h2 {
   font-size: 1.4em;
   font-weight: 700;
-  color: #52c4b9;
+  color: #4f999c;
   text-align: center;
   margin: 1.5em;
 }
@@ -91,27 +91,28 @@ nav a.active {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #f5fafa;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 footer {
   padding: 10px;
   margin-top: 20px;
-  background-color: #4f999c;
+  background-color: #4f999c ;
   color: #FFFFFF;
   text-align: center;
 }
@@ -125,12 +126,12 @@ footer h2 {
 }
 
 a {
-  color: #4f999c;
+  color: #4f999c ;
 }
 
 a:visited {
   /* visited link */
-  color: #4f999c;
+  color: #4f999c ;
 }
 
 a:hover,
@@ -146,13 +147,13 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #4f999c;
+  background-color: #4f999c ;
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 500;
   padding: 10px 30px;
   border-radius: 30px;
-  border-bottom: 2px solid #4f999c;
+  border-bottom: 2px solid #4f999c ;
   /* width of the border, type, color */
   transition: 0.2s opacity;
   text-decoration: none;
@@ -176,7 +177,7 @@ a:active {
 
 .button.contact {
   background-color: white;
-  color: #4f999c;
+  color: #4f999c ;
   border: none;
   text-transform: uppercase;
   transition: .05s
@@ -202,7 +203,7 @@ a:active {
   color: #FFF;
   width: 2em;
   height: 2em;
-  background: #4f999c;
+  background: #4f999c ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,6 +249,7 @@ a:active {
 
 #about .button {
   text-align: center;
+  margin-top: 30px;
 }
 
 .welcome h1 {
@@ -258,10 +260,6 @@ a:active {
   display: block;
   font-size: 80%;
   font-weight: 200;
-}
-
-.welcome h3 {
-  color: #4f999c;
 }
 
 .welcome {
@@ -367,7 +365,6 @@ Medium devices (640px and larger)
 .col-12 {width: 100%;}
 ================================= */
 @media only screen and (min-width: 640px) {
-
   .logo {
     max-width: 200px
   }
@@ -395,12 +392,12 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   main {
     padding-top: 120px;
@@ -421,10 +418,10 @@ Medium devices (640px and larger)
     padding: 15px;
   }
 
- .col-md-4 {
-   display: box;
-   width: 33.33%;
- }
+  .col-md-4 {
+    display: block;
+    width: 33.33%;
+  }
 
   .col-md-6 {
     width: 50%;
@@ -461,9 +458,13 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-4 {
+    width: 33.33%;
+  }
 
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-8 {width: 66.66%;}
+  .col-lg-8 {
+    width: 66.66%;
+  }
 
   .col-lg-5 {
     width: 41.66%;
@@ -506,32 +507,29 @@ Large devices (1024px or larger)
     padding-top: 150px;
   }
 
-.define {
-  padding-top: 50px;
+  .define {
+    padding-top: 50px;
+  }
+
+  .test .row {
+    display: block;
+  }
+
+  /* Ask Carlo how to remove padding from this section of columns */
+  .overview .col-md-6 {
+    padding: 0;
+  }
+
+  #lotus h2:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #52c4b9;
+    width: 30%;
+    margin-left: 15px;
+    top: 50%;
+  }
 }
-
-.test .row {
-  display: block;
-}
-
-/* Ask Carlo how to remove padding from this section of columns */
-.overview .col-md-6 {
-  padding: 0;
-}
-
-#lotus h2:after {
-       position: absolute;
-       content: "";
-       height: 2px;
-       background-color: #52c4b9;
-       width: 30%;
-       margin-left: 15px;
-       top: 50%;
-       }
-
-}
-
-
 
 /* ==============================
 X-large devices (1440px or larger)
