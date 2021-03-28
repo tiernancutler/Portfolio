@@ -121,6 +121,9 @@ footer h2 {
   color: #ffffff;
 }
 
+#contact a.link{
+  color: #FFF;
+}
 .copyright {
   font-size: 12px;
 }
