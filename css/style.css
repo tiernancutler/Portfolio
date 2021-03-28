@@ -230,6 +230,10 @@ a:active {
   text-align: center;
 }
 
+#develop .row {
+  text-align: center;
+}
+
 #about .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #52c4b9;
